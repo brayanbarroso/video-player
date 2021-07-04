@@ -1,23 +1,26 @@
-.button{
+.button {
   background-color: transparent;
   border: none;
   block-size: 32px;
   inline-size: 32px;
 }
 
-#play{
-  background-image: url('../image/play.svg');
+.button:active {
+  transform: scale(0.9);
 }
 
-#pause{
-background-image: url('../image/pause.svg');
+#play {
+  background-image: url("../image/play.svg");
 }
 
-#backward{
-  background-image: url('../image/-10.svg');
-
+#pause {
+  background-image: url("../image/pause.svg");
 }
 
-#forward{
-background-image: url('../image/+10.svg');
+#backward {
+  background-image: url("../image/-10.svg");
+}
+
+#forward {
+  background-image: url("../image/+10.svg");
 }

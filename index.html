@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-  <title>Video Player</title>
-</head>
-<body>
-  <button class="button" id="backward"></button>
-  <button class="button" id="play"></button>
-  <button class="button" id="pause"></button>
-  <button class="button" id="forward"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <h2 class="player-title">Trailer Sintel</h2>
+    <div class="player-actions">
+      <button class="button" id="backward" aria-label=""></button>
+      <button class="button" id="play" aria-label="Reproducir"></button>
+      <button class="button" hidden id="pause" aria-label=""></button>
+      <button class="button" id="forward" aria-label=""></button>
+    </div>
 
-  <video src=""></video>
-</body>
+    <div class="player-progress">
+      <input type="range" />
+    </div>
+
+    <video
+      id="video"
+      poster="./image/poster.png"
+      src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+    ></video>
+
+    <script src="./js/video.js"></script>
+  </body>
 </html>
