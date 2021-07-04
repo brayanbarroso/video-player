@@ -1,0 +1,23 @@
+.button{
+  background-color: transparent;
+  border: none;
+  block-size: 32px;
+  inline-size: 32px;
+}
+
+#play{
+  background-image: url('../image/play.svg');
+}
+
+#pause{
+background-image: url('../image/pause.svg');
+}
+
+#backward{
+  background-image: url('../image/-10.svg');
+
+}
+
+#forward{
+background-image: url('../image/+10.svg');
+}

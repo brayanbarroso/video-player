@@ -1,0 +1,7 @@
+@import './bottom.css';
+
+body{
+  background-color: #26B4BC;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+}
