@@ -18,6 +18,7 @@ body {
 .player video {
   aspect-ratio: 16/9;
   inline-size: 100%;
+  object-fit: cover;
   vertical-align: middle;
 }
 
@@ -33,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   position: absolute;
   inset: 0;
 }
@@ -47,4 +49,15 @@ body {
 
 .player-progress input {
   flex: 1;
+}
+
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.player:hover .player-overlay {
+  opacity: 1;
 }

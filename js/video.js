@@ -3,11 +3,15 @@ const $play = document.querySelector("#play");
 const $pause = document.querySelector("#pause");
 const $backward = document.querySelector("#backward");
 const $forward = document.querySelector("#forward");
+const $progress = document.querySelector("#progress");
 
 $play.addEventListener("click", handlerPlay);
 $pause.addEventListener("click", handlerPause);
 $backward.addEventListener("click", handlerBackward);
 $forward.addEventListener("click", handlerForward);
+$video.addEventListener("loadedmetadata", handleLoaded);
+$video.addEventListener("timeupdate", handleTimeUpdate);
+$progress.addEventListener("input", handleInput);
 
 function handlerPlay() {
   $video.play();
@@ -28,4 +32,16 @@ function handlerBackward() {
 
 function handlerForward() {
   $video.currentTime += 10;
+}
+
+function handleLoaded() {
+  $progress.max = $video.duration;
+}
+
+function handleTimeUpdate() {
+  $progress.value = $video.currentTime;
+}
+
+function handleInput() {
+  $video.currentTime = $progress.value;
 }
