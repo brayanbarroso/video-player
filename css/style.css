@@ -1,7 +1,50 @@
-@import './bottom.css';
+@import "./bottom.css";
 
-body{
-  background-color: #26B4BC;
-  font-family: 'Lato', sans-serif;
+body {
+  background-color: #26b4bc;
+  font-family: "Lato", sans-serif;
   font-size: 17px;
+}
+
+.wrapper {
+  margin: auto;
+  max-inline-size: 900px;
+}
+
+.player {
+  position: relative;
+}
+
+.player video {
+  aspect-ratio: 16/9;
+  inline-size: 100%;
+  vertical-align: middle;
+}
+
+.player-title {
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+}
+
+.player-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+
+.player-progress {
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+}
+
+.player-progress input {
+  flex: 1;
 }
