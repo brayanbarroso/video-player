@@ -7,12 +7,12 @@ body {
 }
 
 .wrapper {
-  margin: auto;
-  margin-block-start: 60px;
+  margin: 0 auto;
   max-inline-size: 900px;
 }
 
 .player {
+  margin-block-start: 60px;
   position: relative;
 }
 
@@ -61,4 +61,15 @@ body {
 
 .player:hover .player-overlay {
   opacity: 1;
+  transition: 0.3s opacity;
+}
+
+@media only screen and (max-width: 785px) {
+  .player {
+    margin-block-start: 100px;
+  }
+
+  .player-title {
+    font-size: 14px;
+  }
 }

@@ -45,14 +45,3 @@ function handleTimeUpdate() {
 function handleInput() {
   $video.currentTime = $progress.value;
 }
-
-const hashtag = document.querySelector("#hashtag");
-if (hashtag) {
-  hashtag.innerHTML = $progress.value;
-}
-$progress.addEventListener("input", handleHashtag);
-
-function handleHashtag() {
-  console.log("soy una funcion");
-  hashtag.innerHTML = $progress.value;
-}
